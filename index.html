@@ -9,7 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="intro-active">
+  <!-- INTRO SCREEN -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="intro-logo-wrap">
+      <div class="intro-logo">H</div>
+      <div class="intro-subtitle">Hannah&nbsp;Nagpall</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-left">
       <a href="#hero" class="nav-logo">HN</a>
@@ -19,7 +28,6 @@
       <a href="#academics">Experience</a>
       <a href="#tennis">Tennis</a>
       <a href="#news">News</a>
-      <a href="#highlights">Highlights</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -36,16 +44,17 @@
             and the discipline I developed as a competitive tennis player.
           </p>
 
-          <div class="hero-cta">
-            <a href="#about" class="btn primary-btn">Who I am</a>
-            <a href="#academics" class="btn ghost-btn">Experience</a>
-          </div>
-
-          <!-- quick contact / resume buttons like your old site -->
-          <div class="quick-links">
-            <a class="small-btn" href="mailto:hannahnagpall@gmail.com">Email me</a>
-            <a class="small-btn" href="https://www.linkedin.com/in/hannah-nagpall" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="small-btn" href="Hannah Nagpall_Resume.pdf" download>résumé</a>
+          <!-- badge-style links (A4) -->
+          <div class="badge-links">
+            <a class="badge-btn" href="https://www.linkedin.com/in/hannah-nagpall" target="_blank" rel="noopener noreferrer">
+              <span class="badge-label">LinkedIn</span>
+            </a>
+            <a class="badge-btn" href="Hannah_Nagpall_Resume.pdf" download>
+              <span class="badge-label">Résumé</span>
+            </a>
+            <a class="badge-btn" href="https://github.com/hannahnagpall05" target="_blank" rel="noopener noreferrer">
+              <span class="badge-label">GitHub</span>
+            </a>
           </div>
         </div>
 
@@ -232,211 +241,149 @@
       </div>
     </section>
 
-    <!-- NEWS & PRESS -->
+    <!-- NEWS & PRESS (horizontal scroll, B3) -->
     <section id="news" class="section section-alt">
       <div class="section-header reveal">
         <h2>News & Press</h2>
-        <p>Moments where my tennis journey shows up in box scores, articles, and announcements.</p>
+        <p>Articles and features that trace parts of my tennis journey.</p>
       </div>
-      <div class="news-grid">
-        <!-- 1 -->
-        <article class="card news-card reveal">
-          <a href="https://aamusports.com/news/2025/4/12/womens-tennis-womens-tennis-records-shutout-over-tuskegee.aspx"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>Hannah Leads AAMU to 7–0 Shutout vs Tuskegee</h3>
-              <p class="news-caption">
-                Contributed to a dominant 7–0 team win with a strong performance in the lineup.
-              </p>
-            </div>
-          </a>
-        </article>
 
-        <!-- 2 -->
-        <article class="card news-card reveal">
-          <a href="https://aamusports.com/news/2025/2/8/womens-tennis-bulldogs-welcome-jax-state-in-first-home-match.aspx"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>First Home Match Appearance vs Jacksonville State</h3>
-              <p class="news-caption">
-                Featured in AAMU’s 2025 home opener, competing against Division I opposition.
-              </p>
-            </div>
-          </a>
-        </article>
+      <div class="news-carousel reveal">
+        <button class="news-arrow news-arrow-left" aria-label="Previous article">&larr;</button>
+        <div class="news-track">
+          <!-- each article is clickable and has a thumbnail-style header -->
 
-        <!-- 3 -->
-        <article class="card news-card reveal">
-          <a href="https://aamusports.com/news/2024/3/3/womens-tennis-nagpall-raya-earn-doubles-win-at-uab.aspx"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>Doubles Victory for Nagpall &amp; Raya at UAB</h3>
-              <p class="news-caption">
-                Earned a key doubles win at UAB, helping secure momentum against D-I competition.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://aamusports.com/news/2025/4/12/womens-tennis-womens-tennis-records-shutout-over-tuskegee.aspx"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-1"></div>
+              <div class="news-content">
+                <h3>Hannah Leads AAMU to 7–0 Shutout vs Tuskegee</h3>
+                <p class="news-caption">
+                  Contributed to a dominant 7–0 team win with a strong performance in the lineup.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 4 -->
-        <article class="card news-card reveal">
-          <a href="https://aamusports.com/news/2024/3/24/womens-tennis-nagpall-notches-victory-in-loss-to-chattanooga.aspx"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>Nagpall Claims Singles Win vs Chattanooga</h3>
-              <p class="news-caption">
-                Picked up an important singles victory in a tight non-conference matchup.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://aamusports.com/news/2025/2/8/womens-tennis-bulldogs-welcome-jax-state-in-first-home-match.aspx"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-2"></div>
+              <div class="news-content">
+                <h3>First Home Match Appearance vs Jacksonville State</h3>
+                <p class="news-caption">
+                  Featured in AAMU’s 2025 home opener, competing against Division I opposition.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 5 -->
-        <article class="card news-card reveal">
-          <a href="https://javelinaathletics.com/news/2025/9/14/womens-tennis-javelinas-battle-d-1-competition-at-islander-open.aspx"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>Representing TAMUK at the Islander Open vs D-I Programs</h3>
-              <p class="news-caption">
-                Competed for TAMUK against strong Division I fields, gaining experience at the next level.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://aamusports.com/news/2024/3/3/womens-tennis-nagpall-raya-earn-doubles-win-at-uab.aspx"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-3"></div>
+              <div class="news-content">
+                <h3>Doubles Victory for Nagpall &amp; Raya at UAB</h3>
+                <p class="news-caption">
+                  Earned a key doubles win at UAB, helping secure momentum against D-I competition.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 6 -->
-        <article class="card news-card reveal">
-          <a href="https://swac.org/news/2024/4/20/swac-womens-tennis-tournament-famu-4-aamu-1.aspx"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>SWAC Women’s Tennis Championship Run with AAMU</h3>
-              <p class="news-caption">
-                Competed in conference championship play as part of AAMU’s SWAC tournament campaign.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://aamusports.com/news/2024/3/24/womens-tennis-nagpall-notches-victory-in-loss-to-chattanooga.aspx"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-4"></div>
+              <div class="news-content">
+                <h3>Nagpall Claims Singles Win vs Chattanooga</h3>
+                <p class="news-caption">
+                  Picked up an important singles victory in a tight non-conference matchup.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 7 -->
-        <article class="card news-card reveal">
-          <a href="https://mmpublicschool.com/image_gallery_photos.php?id=150&&title=Closing%20Ceremony%20of%20CBSE%20National%20Tennis%20Championship%202022"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>National-Level Competitor at CBSE Tennis Championships</h3>
-              <p class="news-caption">
-                Represented MM Public School at the CBSE National Tennis Championship in India.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://javelinaathletics.com/news/2025/9/14/womens-tennis-javelinas-battle-d-1-competition-at-islander-open.aspx"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-5"></div>
+              <div class="news-content">
+                <h3>Representing TAMUK at the Islander Open vs D-I Programs</h3>
+                <p class="news-caption">
+                  Competed for TAMUK against strong Division I fields, gaining experience at the next level.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 8 -->
-        <article class="card news-card reveal">
-          <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/uni.sidearmsports.com/documents/2025/7/23/ITA_Scholar_Athletes_-_Division_I_Women.pdf?timestamp=20250723030446"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>ITA Scholar-Athlete Honor (Division I Women)</h3>
-              <p class="news-caption">
-                Recognized nationally for balancing high academic performance with Division I tennis.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://swac.org/news/2024/4/20/swac-womens-tennis-tournament-famu-4-aamu-1.aspx"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-6"></div>
+              <div class="news-content">
+                <h3>SWAC Women’s Tennis Championship Run with AAMU</h3>
+                <p class="news-caption">
+                  Competed in conference championship play as part of AAMU’s SWAC tournament campaign.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 9 -->
-        <article class="card news-card reveal">
-          <a href="https://256today.com/alabama-am-womens-tennis-team-wins-hbcu-national-championship/"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>Part of AAMU’s HBCU National Championship Team</h3>
-              <p class="news-caption">
-                Contributed to AAMU’s historic HBCU national title run covered by regional media.
-              </p>
-            </div>
-          </a>
-        </article>
+          <article class="card news-card">
+            <a href="https://mmpublicschool.com/image_gallery_photos.php?id=150&&title=Closing%20Ceremony%20of%20CBSE%20National%20Tennis%20Championship%202022"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-7"></div>
+              <div class="news-content">
+                <h3>National-Level Competitor at CBSE Tennis Championships</h3>
+                <p class="news-caption">
+                  Represented MM Public School at the CBSE National Tennis Championship in India.
+                </p>
+              </div>
+            </a>
+          </article>
 
-        <!-- 10 -->
-        <article class="card news-card reveal">
-          <a href="https://www.aamu.edu/about/inside-aamu/news/bulldogs-triumph-at-23rd-annual-hbcu-national-tennis-championships-in-atlanta.html"
-             target="_blank" rel="noopener noreferrer" class="news-link">
-            <div class="news-thumb"></div>
-            <div class="news-content">
-              <h3>Featured in AAMU’s HBCU National Championship Coverage</h3>
-              <p class="news-caption">
-                Highlighted in AAMU’s official recap of the Bulldogs’ championship-winning performance.
-              </p>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
+          <article class="card news-card">
+            <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/uni.sidearmsports.com/documents/2025/7/23/ITA_Scholar_Athletes_-_Division_I_Women.pdf?timestamp=20250723030446"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-8"></div>
+              <div class="news-content">
+                <h3>ITA Scholar-Athlete Honor (Division I Women)</h3>
+                <p class="news-caption">
+                  Recognized nationally for balancing high academic performance with Division I tennis.
+                </p>
+              </div>
+            </a>
+          </article>
 
-    <!-- HIGHLIGHTS / TIMELINE -->
-    <section id="highlights" class="section">
-      <div class="section-header reveal">
-        <h2>Highlights</h2>
-        <p>A few checkpoints that shaped how I think and work.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>CBSE National Tennis · India</h3>
-            <p>
-              Competed at the CBSE National Tennis Championships, building the foundation of my competitive mindset.
-            </p>
-          </div>
+          <article class="card news-card">
+            <a href="https://256today.com/alabama-am-womens-tennis-team-wins-hbcu-national-championship/"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-9"></div>
+              <div class="news-content">
+                <h3>Part of AAMU’s HBCU National Championship Team</h3>
+                <p class="news-caption">
+                  Contributed to AAMU’s historic HBCU national title run covered by regional media.
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card news-card">
+            <a href="https://www.aamu.edu/about/inside-aamu/news/bulldogs-triumph-at-23rd-annual-hbcu-national-tennis-championships-in-atlanta.html"
+               target="_blank" rel="noopener noreferrer" class="news-link">
+              <div class="news-thumb news-thumb-10"></div>
+              <div class="news-content">
+                <h3>Featured in AAMU’s HBCU National Championship Coverage</h3>
+                <p class="news-caption">
+                  Highlighted in AAMU’s official recap of the Bulldogs’ championship-winning performance.
+                </p>
+              </div>
+            </a>
+          </article>
         </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Alabama A&amp;M University</h3>
-            <p>
-              Joined AAMU as a Computer Science major and NCAA Division I student-athlete, balancing academics and sport.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>HBCU National Championship &amp; ITA Scholar-Athlete</h3>
-            <p>
-              Part of a championship-winning team while earning national academic-athlete recognition.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Texas A&amp;M University–Kingsville</h3>
-            <p>
-              Continued my CS degree, joined new research projects, and competed against D-I programs at events like the Islander Open.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Next</h3>
-            <p>
-              Building toward a Master’s at a top research university—bringing together code, research, and the habits I learned on court.
-            </p>
-          </div>
-        </div>
+        <button class="news-arrow news-arrow-right" aria-label="Next article">&rarr;</button>
       </div>
     </section>
 
