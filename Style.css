@@ -1,5 +1,5 @@
 :root {
-  /* C3 + C9 hybrid: mostly black + deep navy with ice-blue accent */
+  /* Black + deep navy + ice-blue hybrid */
   --bg-main: #050608;
   --bg-alt: #050816;
   --card-bg: #0b0f1a;
@@ -31,60 +31,51 @@ body {
   line-height: 1.6;
 }
 
-/* INTRO SCREEN */
+/* INTRO SCREEN – italic H */
 
 .intro-screen {
   position: fixed;
   inset: 0;
-  z-index: 100;
-  background: radial-gradient(circle at top, #020617, #000000);
+  z-index: 200;
+  background: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: opacity 0.6s ease, visibility 0.6s ease;
+  pointer-events: none; /* never block clicks */
 }
 
-.intro-logo-wrap {
-  text-align: center;
-}
-
-.intro-logo {
-  font-family: "Space Grotesk", system-ui, sans-serif;
-  font-size: clamp(3.5rem, 8vw, 4.5rem);
+.only-h {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(4rem, 10vw, 6rem);
   font-weight: 700;
   font-style: italic;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-main);
-  transform: skewX(-12deg);
-  position: relative;
+  color: #ffffff;
+  opacity: 0;
+  transform: scale(0.85) skewX(-12deg);
+  animation: intro-pop 1.2s ease forwards;
 }
 
-.intro-logo::before {
-  content: "";
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: -0.35rem;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-}
-
-.intro-subtitle {
-  margin-top: 0.7rem;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  color: var(--text-muted);
+@keyframes intro-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) skewX(-12deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) skewX(-12deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) skewX(-12deg);
+  }
 }
 
 .intro-screen.hide {
   opacity: 0;
   visibility: hidden;
-}
-
-body.intro-active {
-  overflow: hidden;
 }
 
 /* NAVBAR */
@@ -200,7 +191,7 @@ body.intro-active {
   color: var(--text-main);
 }
 
-/* BADGE LINKS (A4) */
+/* Badge-style hero links */
 
 .badge-links {
   margin-top: 1.7rem;
@@ -281,6 +272,7 @@ body.intro-active {
   background: radial-gradient(circle, rgba(125, 211, 252, 0.5), transparent 65%);
   filter: blur(12px);
   opacity: 0.7;
+  pointer-events: none; /* never block clicks */
 }
 
 /* SECTIONS */
@@ -415,7 +407,7 @@ body.intro-active {
   font-weight: 500;
 }
 
-/* NEWS CAROUSEL (B3) */
+/* NEWS CAROUSEL */
 
 .news-carousel {
   max-width: var(--max-width);
@@ -423,7 +415,7 @@ body.intro-active {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .news-track {
@@ -451,29 +443,16 @@ body.intro-active {
 .news-link {
   display: block;
   height: 100%;
+  width: 100%;
   text-decoration: none;
   color: inherit;
+  pointer-events: auto !important;
 }
 
 .news-thumb {
   height: 140px;
   border-bottom: 1px solid rgba(31, 41, 55, 0.9);
   background: radial-gradient(circle at top, rgba(125, 211, 252, 0.45), #020617);
-}
-
-/* if you later upload real images, you can swap these background-images */
-.news-thumb-1,
-.news-thumb-2,
-.news-thumb-3,
-.news-thumb-4,
-.news-thumb-5,
-.news-thumb-6,
-.news-thumb-7,
-.news-thumb-8,
-.news-thumb-9,
-.news-thumb-10 {
-  background-size: cover;
-  background-position: center;
 }
 
 .news-content {
@@ -589,10 +568,6 @@ body.intro-active {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .news-carousel {
-    gap: 0.75rem;
-  }
-
   .news-arrow {
     display: none;
   }
@@ -606,5 +581,21 @@ body.intro-active {
   .news-card {
     flex: 0 0 260px;
   }
+}
+
+/* SAFETY: FORCE CONTACT + NEWS CLICKABLE */
+
+#contact,
+#contact * {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 50;
+}
+
+.news-carousel,
+.news-track,
+.news-card,
+.news-card * {
+  pointer-events: auto !important;
 }
 
