@@ -1,4 +1,4 @@
-// INTRO SCREEN
+// INTRO SCREEN HIDE
 window.addEventListener("load", () => {
   const intro = document.getElementById("intro-screen");
   document.body.classList.add("intro-active");
@@ -8,10 +8,10 @@ window.addEventListener("load", () => {
       intro.classList.add("hide");
       document.body.classList.remove("intro-active");
     }
-  }, 1500); // intro visible ~1.5s
+  }, 1100); // ~1.1s intro
 });
 
-// Scroll reveal animation
+// SCROLL REVEAL
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
@@ -23,14 +23,12 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.18,
-  }
+  { threshold: 0.18 }
 );
 
 revealElements.forEach((el) => observer.observe(el));
 
-// News carousel arrows (B3)
+// NEWS CAROUSEL ARROWS
 const newsTrack = document.querySelector(".news-track");
 const leftArrow = document.querySelector(".news-arrow-left");
 const rightArrow = document.querySelector(".news-arrow-right");
@@ -51,7 +49,7 @@ if (rightArrow) {
   rightArrow.addEventListener("click", () => scrollNews("right"));
 }
 
-// Footer year
+// FOOTER YEAR
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
