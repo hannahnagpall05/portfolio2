@@ -4,17 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hannah Nagpall | Portfolio</title>
-  <link rel="stylesheet" href="Style.css" />
-  <!-- Google Fonts -->
+
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
+
 <body class="intro-active">
+
   <!-- INTRO SCREEN -->
   <div id="intro-screen" class="intro-screen">
     <div class="intro-logo-wrap">
-      <div class="intro-logo">H</div>
-      <div class="intro-subtitle">Hannah&nbsp;Nagpall</div>
+      <div class="intro-logo only-h">H</div>
     </div>
   </div>
 
@@ -25,6 +26,7 @@
     </div>
     <nav class="nav-links">
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#academics">Experience</a>
       <a href="#tennis">Tennis</a>
       <a href="#news">News</a>
@@ -32,383 +34,376 @@
     </nav>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="hero-inner">
-        <div class="hero-left reveal">
-          <p class="hero-kicker">Honors CS Student · Former NCAA Athlete</p>
-          <h1 class="hero-title">Hannah Nagpall</h1>
-          <p class="hero-subtitle">
-            I’m building a path that combines <span>computer science</span>, <span>research</span>,
-            and the discipline I developed as a competitive tennis player.
-          </p>
-
-          <!-- badge-style links (A4) -->
-          <div class="badge-links">
-            <a class="badge-btn" href="https://www.linkedin.com/in/hannah-nagpall" target="_blank" rel="noopener noreferrer">
-              <span class="badge-label">LinkedIn</span>
-            </a>
-            <a class="badge-btn" href="Hannah_Nagpall_Resume.pdf" download>
-              <span class="badge-label">Résumé</span>
-            </a>
-            <a class="badge-btn" href="https://github.com/hannahnagpall05" target="_blank" rel="noopener noreferrer">
-              <span class="badge-label">GitHub</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-right reveal">
-          <div class="hero-image-box">
-            <div class="hero-image-inner">
-              <!-- make sure hero.jpg exists in the repo root -->
-              <img src="hero.jpeg" alt="Hannah Nagpall" />
-            </div>
-            <p class="hero-image-caption">
-              Computer Science · Research · Tennis
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="hero-aura"></div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="section-header reveal">
-        <h2>About</h2>
-        <p>Where I come from, what I’m doing now, and where I want to go next.</p>
-      </div>
-      <div class="about-grid">
-        <div class="card about-text reveal">
-          <p>
-            I’m Hannah, an Honors Computer Science student and former NCAA Division I tennis player.
-            I began my CS journey at Alabama A&amp;M University and now continue it at Texas A&amp;M
-            University–Kingsville.
-          </p>
-          <p>
-            On the technical side, I work with Java, Python, C++, SQL, HTML, and CSS, and I’m drawn
-            to problems where rigorous thinking and real-world impact meet—whether that’s in backend
-            development, AI-in-retail externships, or Raman spectroscopy research.
-          </p>
-          <p>
-            My long-term goal is to pursue a Master’s degree at a top research university, contributing
-            to high-quality engineering work while staying grounded in the habits I built on court:
-            discipline, resilience, and showing up every day.
-          </p>
-        </div>
-
-        <div class="card about-points reveal">
-          <h3>How I approach work</h3>
-          <ul>
-            <li><span>Discipline</span> – Years of training and competition taught me to stick with hard things.</li>
-            <li><span>Consistency</span> – Whether it’s early practices or debugging, I show up and do the reps.</li>
-            <li><span>Pressure-ready</span> – Matches and deadlines both demand composure and clear decision-making.</li>
-            <li><span>Ambition</span> – I’m not chasing “busy”; I’m chasing meaningful, high-standard work.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE & PROJECTS -->
-    <section id="academics" class="section section-alt">
-      <div class="section-header reveal">
-        <h2>Experience & Projects</h2>
-        <p>A snapshot of the technical, research, and analytical work I've done so far.</p>
-      </div>
-
-      <div class="cards-grid">
-        <!-- Raman Spectroscopy Research -->
-        <article class="card reveal">
-          <h3>Undergraduate Research Assistant — Raman Spectroscopy</h3>
-          <p class="card-tag">Texas A&amp;M University–Kingsville · Nov 2025 – Present</p>
-          <ul class="card-list">
-            <li>Conduct Raman spectroscopy-based analysis of chemical samples, focusing on spectral acquisition, preprocessing, and interpretation.</li>
-            <li>Assist with calibration and routine handling of Raman instruments to maintain accuracy and consistency.</li>
-            <li>Document procedures, record spectral results, and support ongoing lab research activities.</li>
-          </ul>
-        </article>
-
-        <!-- Backend Engineering Internship -->
-        <article class="card reveal">
-          <h3>Application Development Intern — Backend Engineering</h3>
-          <p class="card-tag">GPANN Technologies · May 2025 – Aug 2025</p>
-          <ul class="card-list">
-            <li>Developed backend functionality using Java and Spring Boot, integrating with MongoDB.</li>
-            <li>Built and tested RESTful APIs for product management, user authentication, and order processing.</li>
-            <li>Contributed to a microservices architecture designed for scalable performance.</li>
-          </ul>
-        </article>
-
-        <!-- AI in Retail / Tech Externship -->
-        <article class="card reveal">
-          <h3>AI in Retail Technology Extern</h3>
-          <p class="card-tag">The Home Depot · May 2025 – Jul 2025</p>
-          <ul class="card-list">
-            <li>Designed a Risk-Landscape Summary to surface vulnerabilities and mitigation strategies.</li>
-            <li>Created a Tech-Tool Snapshot table and drafted emergency alert copy for resilience planning.</li>
-            <li>Performed comparative analysis of risk-management tools and compiled an annotated resource bank.</li>
-          </ul>
-        </article>
-
-        <!-- Crystal Growth Research -->
-        <article class="card reveal">
-          <h3>Undergraduate Research Assistant — Crystal Growth</h3>
-          <p class="card-tag">AAMU NSF-INSPIRE Project · Oct 2023 – Jul 2024</p>
-          <ul class="card-list">
-            <li>Investigated properties, synthesis, and applications of high-tech crystals in multiple industries.</li>
-            <li>Analyzed roles of crystals in electronic devices, optics, and medical technology.</li>
-            <li>Conducted literature reviews and survey work on current scientific publications.</li>
-          </ul>
-        </article>
-
-        <!-- VC Research Externship -->
-        <article class="card reveal">
-          <h3>VC Industry Research & Pitch Desk Extern</h3>
-          <p class="card-tag">Externship · Jul 2024 – Aug 2024</p>
-          <ul class="card-list">
-            <li>Completed market analysis to identify emerging trends in the energy sector.</li>
-            <li>Evaluated competitive landscapes and key growth opportunities.</li>
-            <li>Prepared market-analysis presentations and an investment summary for a targeted startup.</li>
-          </ul>
-        </article>
-
-        <!-- Wordle Project -->
-        <article class="card reveal">
-          <h3>Wordle Game</h3>
-          <p class="card-tag">Python · Personal Project</p>
-          <ul class="card-list">
-            <li>Implemented a Wordle-style game with guess validation and color-coded feedback.</li>
-            <li>Handled game state, scoring, and replay logic in Python.</li>
-          </ul>
-        </article>
-
-        <!-- F1 Webpage Project -->
-        <article class="card reveal">
-          <h3>F1 Sports Informational Webpage</h3>
-          <p class="card-tag">HTML · CSS</p>
-          <ul class="card-list">
-            <li>Built a static site explaining key aspects of Formula 1 for new fans.</li>
-            <li>Used semantic HTML and custom CSS for structure, hierarchy, and layout.</li>
-          </ul>
-        </article>
-
-        <!-- Portfolio Project -->
-        <article class="card reveal">
-          <h3>Personal Portfolio Website</h3>
-          <p class="card-tag">HTML · CSS · JavaScript</p>
-          <ul class="card-list">
-            <li>Designed and coded this site from scratch to showcase academics, tennis, and news.</li>
-            <li>Implemented a dark, responsive layout and scroll-based reveal animations.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- TENNIS -->
-    <section id="tennis" class="section">
-      <div class="section-header reveal">
-        <h2>Tennis</h2>
-        <p>High-performance sport is where I learned how to think under pressure.</p>
-      </div>
-      <div class="tennis-grid">
-        <div class="card reveal">
-          <h3>Competing across levels</h3>
-          <p>
-            I’ve competed at national-level events in India, played NCAA Division I tennis at Alabama A&amp;M,
-            and now represent Texas A&amp;M University–Kingsville, facing strong competition across conferences
-            and tournaments.
-          </p>
-          <p>
-            Wins, losses, championship runs—they all shaped how I handle pressure, respond to setbacks,
-            and show up for a team.
-          </p>
-        </div>
-        <div class="card reveal">
-          <h3>On-court habits, off-court impact</h3>
-          <p>
-            The habits I built on court carry straight into my academic and technical work:
-          </p>
-          <ul class="card-list">
-            <li>Breaking big goals into daily, repeatable work.</li>
-            <li>Using feedback instead of avoiding it.</li>
-            <li>Competing with myself, not just the scoreboard.</li>
-          </ul>
-          <p class="small-note">
-            Below are a few highlights and articles that document parts of that journey.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWS & PRESS (horizontal scroll, B3) -->
-    <section id="news" class="section section-alt">
-      <div class="section-header reveal">
-        <h2>News & Press</h2>
-        <p>Articles and features that trace parts of my tennis journey.</p>
-      </div>
-
-      <div class="news-carousel reveal">
-        <button class="news-arrow news-arrow-left" aria-label="Previous article">&larr;</button>
-        <div class="news-track">
-          <!-- each article is clickable and has a thumbnail-style header -->
-
-          <article class="card news-card">
-            <a href="https://aamusports.com/news/2025/4/12/womens-tennis-womens-tennis-records-shutout-over-tuskegee.aspx"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-1"></div>
-              <div class="news-content">
-                <h3>Hannah Leads AAMU to 7–0 Shutout vs Tuskegee</h3>
-                <p class="news-caption">
-                  Contributed to a dominant 7–0 team win with a strong performance in the lineup.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://aamusports.com/news/2025/2/8/womens-tennis-bulldogs-welcome-jax-state-in-first-home-match.aspx"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-2"></div>
-              <div class="news-content">
-                <h3>First Home Match Appearance vs Jacksonville State</h3>
-                <p class="news-caption">
-                  Featured in AAMU’s 2025 home opener, competing against Division I opposition.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://aamusports.com/news/2024/3/3/womens-tennis-nagpall-raya-earn-doubles-win-at-uab.aspx"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-3"></div>
-              <div class="news-content">
-                <h3>Doubles Victory for Nagpall &amp; Raya at UAB</h3>
-                <p class="news-caption">
-                  Earned a key doubles win at UAB, helping secure momentum against D-I competition.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://aamusports.com/news/2024/3/24/womens-tennis-nagpall-notches-victory-in-loss-to-chattanooga.aspx"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-4"></div>
-              <div class="news-content">
-                <h3>Nagpall Claims Singles Win vs Chattanooga</h3>
-                <p class="news-caption">
-                  Picked up an important singles victory in a tight non-conference matchup.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://javelinaathletics.com/news/2025/9/14/womens-tennis-javelinas-battle-d-1-competition-at-islander-open.aspx"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-5"></div>
-              <div class="news-content">
-                <h3>Representing TAMUK at the Islander Open vs D-I Programs</h3>
-                <p class="news-caption">
-                  Competed for TAMUK against strong Division I fields, gaining experience at the next level.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://swac.org/news/2024/4/20/swac-womens-tennis-tournament-famu-4-aamu-1.aspx"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-6"></div>
-              <div class="news-content">
-                <h3>SWAC Women’s Tennis Championship Run with AAMU</h3>
-                <p class="news-caption">
-                  Competed in conference championship play as part of AAMU’s SWAC tournament campaign.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://mmpublicschool.com/image_gallery_photos.php?id=150&&title=Closing%20Ceremony%20of%20CBSE%20National%20Tennis%20Championship%202022"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-7"></div>
-              <div class="news-content">
-                <h3>National-Level Competitor at CBSE Tennis Championships</h3>
-                <p class="news-caption">
-                  Represented MM Public School at the CBSE National Tennis Championship in India.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/uni.sidearmsports.com/documents/2025/7/23/ITA_Scholar_Athletes_-_Division_I_Women.pdf?timestamp=20250723030446"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-8"></div>
-              <div class="news-content">
-                <h3>ITA Scholar-Athlete Honor (Division I Women)</h3>
-                <p class="news-caption">
-                  Recognized nationally for balancing high academic performance with Division I tennis.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://256today.com/alabama-am-womens-tennis-team-wins-hbcu-national-championship/"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-9"></div>
-              <div class="news-content">
-                <h3>Part of AAMU’s HBCU National Championship Team</h3>
-                <p class="news-caption">
-                  Contributed to AAMU’s historic HBCU national title run covered by regional media.
-                </p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card news-card">
-            <a href="https://www.aamu.edu/about/inside-aamu/news/bulldogs-triumph-at-23rd-annual-hbcu-national-tennis-championships-in-atlanta.html"
-               target="_blank" rel="noopener noreferrer" class="news-link">
-              <div class="news-thumb news-thumb-10"></div>
-              <div class="news-content">
-                <h3>Featured in AAMU’s HBCU National Championship Coverage</h3>
-                <p class="news-caption">
-                  Highlighted in AAMU’s official recap of the Bulldogs’ championship-winning performance.
-                </p>
-              </div>
-            </a>
-          </article>
-        </div>
-        <button class="news-arrow news-arrow-right" aria-label="Next article">&rarr;</button>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="section-header reveal">
-        <h2>Contact</h2>
-        <p>For research, internships, or collaborations.</p>
-      </div>
-      <div class="contact-card card reveal">
-        <p>
-          I’m open to research opportunities, software and data projects, and roles where disciplined execution and
-          clear thinking matter.
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-left reveal">
+        <p class="hero-kicker">Honors CS Student · Former NCAA Athlete</p>
+        <h1 class="hero-title">Hannah Nagpall</h1>
+        <p class="hero-subtitle">
+          I’m building a path that combines <span>computer science</span>, <span>research</span>,
+          and the discipline I developed as a competitive tennis player.
         </p>
-        <div class="contact-details">
-          <a href="mailto:hannahnagpall@gmail.com" class="contact-link">hannahnagpall@gmail.com</a>
-          <a href="https://www.linkedin.com/in/hannah-nagpall" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
-          <a href="https://github.com/hannahnagpall05" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+
+        <!-- BADGE BUTTONS -->
+        <div class="badge-links">
+          <a class="badge-btn" href="https://www.linkedin.com/in/hannah-nagpall" target="_blank">
+            <span class="badge-label">LinkedIn</span>
+          </a>
+          <a class="badge-btn" href="Hannah nagpall_Resume.pdf" download>
+            <span class="badge-label">Résumé</span>
+          </a>
+          <a class="badge-btn" href="https://github.com/hannahnagpall05" target="_blank">
+            <span class="badge-label">GitHub</span>
+          </a>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="hero-right reveal">
+        <div class="hero-image-box">
+          <div class="hero-image-inner">
+            <img src="hero.jpeg" alt="Hannah Nagpall">
+          </div>
+          <p class="hero-image-caption">Computer Science · Research · Tennis</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-aura"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-header reveal">
+      <h2>About</h2>
+      <p>Where I come from, what I’m doing now, and where I want to go next.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="card about-text reveal">
+        <p>
+          I’m Hannah, an Honors Computer Science student and former NCAA Division I tennis player.
+          I began my CS journey at Alabama A&amp;M University and now continue it at Texas A&amp;M University–Kingsville.
+        </p>
+        <p>
+          I work with Java, Python, C++, SQL, HTML, and CSS, and I’m drawn to problems where rigorous thinking
+          and real-world impact meet—whether that’s backend engineering, AI-in-retail externships,
+          or Raman spectroscopy research.
+        </p>
+        <p>
+          My long-term goal is to pursue a Master’s degree at a top research university, contributing
+          to high-quality engineering work while staying grounded in the habits I built on court.
+        </p>
+      </div>
+
+      <div class="card about-points reveal">
+        <h3>How I approach work</h3>
+        <ul>
+          <li><span>Discipline</span> – Years of training and competition taught me to stick with hard things.</li>
+          <li><span>Consistency</span> – Whether it’s early practices or debugging, I show up and do the reps.</li>
+          <li><span>Pressure-ready</span> – Matches and deadlines both demand composure and clear decisions.</li>
+          <li><span>Ambition</span> – I’m not chasing “busy”; I’m chasing meaningful, high-standard work.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION (new section) -->
+  <section id="education" class="section section-alt">
+    <div class="section-header reveal">
+      <h2>Education</h2>
+      <p>My academic foundation in computer science.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="card reveal">
+        <h3>Texas A&M University–Kingsville</h3>
+        <p class="card-tag">B.S. Computer Science · Honors</p>
+        <ul class="card-list">
+          <li>Aug 2025 – Present</li>
+          <li>Advanced coursework in algorithms, systems, and engineering fundamentals.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Alabama A&M University</h3>
+        <p class="card-tag">B.S. Computer Science</p>
+        <ul class="card-list">
+          <li>Aug 2023 – May 2025</li>
+          <li>Completed foundational CS curriculum and competed as NCAA D-I athlete.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & PROJECTS -->
+  <section id="academics" class="section section-alt">
+    <div class="section-header reveal">
+      <h2>Experience & Projects</h2>
+      <p>A snapshot of the technical, research, and analytical work I've done.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="card reveal">
+        <h3>Undergraduate Research Assistant — Raman Spectroscopy</h3>
+        <p class="card-tag">TAMUK · Nov 2025 – Present</p>
+        <ul class="card-list">
+          <li>Conduct Raman spectroscopy analysis & chemical signal interpretation.</li>
+          <li>Assist with calibration & routine instrument operation.</li>
+          <li>Prepare documentation for experimental workflows.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Application Development Intern — Backend Engineering</h3>
+        <p class="card-tag">GPANN Technologies · Summer 2025</p>
+        <ul class="card-list">
+          <li>Built backend features using Java + Spring Boot.</li>
+          <li>Integrated MongoDB & developed REST APIs.</li>
+          <li>Contributed to scalable microservices architecture.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>AI in Retail Technology Extern</h3>
+        <p class="card-tag">The Home Depot · Summer 2025</p>
+        <ul class="card-list">
+          <li>Designed risk-analysis frameworks for AI tools.</li>
+          <li>Created resilience documents for alert systems.</li>
+          <li>Researched industry risk-management platforms.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Undergraduate Research Assistant — Crystal Growth</h3>
+        <p class="card-tag">AAMU NSF-INSPIRE · 2023–2024</p>
+        <ul class="card-list">
+          <li>Investigated properties & synthesis of functional crystals.</li>
+          <li>Studied applications across electronics & optics.</li>
+          <li>Conducted technical literature reviews.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>VC Research & Pitch Desk Extern</h3>
+        <p class="card-tag">Externship · 2024</p>
+        <ul class="card-list">
+          <li>Performed market analysis for the energy sector.</li>
+          <li>Evaluated competitive landscapes.</li>
+          <li>Created investment summaries for startup pitches.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Wordle Game</h3>
+        <p class="card-tag">Python · Project</p>
+        <ul class="card-list">
+          <li>Implemented Wordle logic with color-coded feedback.</li>
+          <li>Built scoring and replay functions.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>F1 Informational Website</h3>
+        <p class="card-tag">HTML · CSS</p>
+        <ul class="card-list">
+          <li>Created a multi-section site explaining F1 basics.</li>
+          <li>Used semantic HTML & clean CSS layout.</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Portfolio Website</h3>
+        <p class="card-tag">HTML · CSS · JS</p>
+        <ul class="card-list">
+          <li>Designed & built this website from scratch.</li>
+          <li>Implemented animations, interactions & responsive design.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TENNIS -->
+  <section id="tennis" class="section">
+    <div class="section-header reveal">
+      <h2>Tennis</h2>
+      <p>High-performance sport is where I learned how to think under pressure.</p>
+    </div>
+
+    <div class="tennis-grid">
+      <div class="card reveal">
+        <h3>Competing across levels</h3>
+        <p>
+          I’ve competed at national-level events in India, played NCAA Division I tennis at AAMU,
+          and now represent TAMUK. These experiences shaped my discipline and resilience.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Habits from the court</h3>
+        <ul class="card-list">
+          <li>Consistency & sticking to process.</li>
+          <li>Handling pressure & decision-making.</li>
+          <li>Training mindset applied to engineering work.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" class="section section-alt">
+    <div class="section-header reveal">
+      <h2>News & Press</h2>
+      <p>Articles and features documenting my tennis journey.</p>
+    </div>
+
+    <div class="news-carousel reveal">
+      <button class="news-arrow news-arrow-left">&larr;</button>
+
+      <div class="news-track">
+
+        <!-- ARTICLE TEMPLATES (ALL CLICKABLE) -->
+        <article class="card news-card">
+          <a href="https://aamusports.com/news/2025/4/12/womens-tennis-womens-tennis-records-shutout-over-tuskegee.aspx"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>Hannah Leads AAMU to 7–0 Shutout</h3>
+              <p class="news-caption">Strong performance contributed to a dominant win.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://aamusports.com/news/2025/2/8/womens-tennis-bulldogs-welcome-jax-state-in-first-home-match.aspx"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>First Home Match Appearance</h3>
+              <p class="news-caption">Featured in AAMU’s 2025 home opener.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://aamusports.com/news/2024/3/3/womens-tennis-nagpall-raya-earn-doubles-win-at-uab.aspx"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>Doubles Win at UAB</h3>
+              <p class="news-caption">Secured momentum with a strong doubles victory.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://aamusports.com/news/2024/3/24/womens-tennis-nagpall-notches-victory-in-loss-to-chattanooga.aspx"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>Singles Victory vs Chattanooga</h3>
+              <p class="news-caption">Earned an individual win in a tight match.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://javelinaathletics.com/news/2025/9/14/womens-tennis-javelinas-battle-d-1-competition-at-islander-open.aspx"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>TAMUK at Islander Open</h3>
+              <p class="news-caption">Competed against strong D-I fields.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://swac.org/news/2024/4/20/swac-womens-tennis-tournament-famu-4-aamu-1.aspx"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>SWAC Championship Run</h3>
+              <p class="news-caption">Conference tournament performance.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://mmpublicschool.com/image_gallery_photos.php?id=150"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>CBSE National Championships</h3>
+              <p class="news-caption">Represented MMPS at national-level events.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/uni.sidearmsports.com/documents/2025/7/23/ITA_Scholar_Athletes_-_Division_I_Women.pdf"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>ITA Scholar-Athlete Honor</h3>
+              <p class="news-caption">Recognized for excellence in sports + academics.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://256today.com/alabama-am-womens-tennis-team-wins-hbcu-national-championship/"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>HBCU National Championship</h3>
+              <p class="news-caption">Part of historic title-winning squad.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card news-card">
+          <a href="https://www.aamu.edu/about/inside-aamu/news/bulldogs-triumph-at-23rd-annual-hbcu-national-tennis-championships-in-atlanta.html"
+             target="_blank" class="news-link">
+            <div class="news-thumb"></div>
+            <div class="news-content">
+              <h3>AAMU Championship Feature</h3>
+              <p class="news-caption">Detailed recap of the championship win.</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <button class="news-arrow news-arrow-right">&rarr;</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="section-header reveal">
+      <h2>Contact</h2>
+      <p>For research, internships, or collaborations.</p>
+    </div>
+
+    <div class="contact-card card reveal">
+      <p>
+        I’m open to research opportunities, engineering roles, and technical collaborations.
+      </p>
+
+      <div class="contact-details">
+        <a href="mailto:hannahnagpall@gmail.com" class="contact-link">hannahnagpall@gmail.com</a>
+        <a href="https://www.linkedin.com/in/hannah-nagpall" target="_blank" class="contact-link">LinkedIn</a>
+        <a href="https://github.com/hannahnagpall05" target="_blank" class="contact-link">GitHub</a>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Hannah Nagpall. Built with HTML, CSS &amp; a little JavaScript.</p>
+    <p>© <span id="year"></span> Hannah Nagpall</p>
   </footer>
 
   <script src="script.js"></script>
